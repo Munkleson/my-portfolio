@@ -1,0 +1,20 @@
+.links-container {
+  /* width: 2.5vw; */
+  height: 2em;
+  bottom: -50px;
+}
+
+.icon-images:hover {
+  transform: scale(1.2, 1.2);
+  transition: 0.3s;
+}
+
+.icon-images {
+  height: 100%;
+  vertical-align: top !important;
+  transition: 0.3s;
+}
+
+.icon-link {
+  margin-left: 8px;
+}

@@ -1,0 +1,36 @@
+.profile-container {
+  margin-top: 5%;
+  width: 40%;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+}
+
+.profile-container-right {
+  width: 80%;
+}
+
+.profile-container-right > * {
+  margin: 5px;
+}
+
+.profile-text-content {
+  width: 100%;
+}
+
+.section-break {
+  margin-top: 100px;
+  width: 100vw;
+  height: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-break-line {
+  width: 50%;
+  height: 2.5px;
+  background: linear-gradient(to right, transparent, black, transparent);
+}
