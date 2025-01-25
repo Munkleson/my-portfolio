@@ -19,19 +19,3 @@
 .profile-text-content {
   width: 100%;
 }
-
-.section-break {
-  margin-top: 100px;
-  margin-bottom: 20px;
-  width: 100vw;
-  height: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-break-line {
-  width: 50%;
-  height: 2.5px;
-  background: linear-gradient(to right, transparent, black, transparent);
-}
