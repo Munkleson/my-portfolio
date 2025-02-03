@@ -1,0 +1,23 @@
+.tech-stack {
+  height: 80px;
+  width: 80px;
+  cursor: default;
+}
+
+.tech-stack-image {
+  height: 50px;
+  transition: 0.2s ease-out;
+  margin-bottom: 2px;
+}
+
+.tech-stack-image:hover {
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  transform: scale(1.2, 1.2);
+}
+
+.tech-stack-text {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
