@@ -70,6 +70,11 @@ const services = [
     image: "images/skills/git.png",
     link: "https://git-scm.com/",
   },
+  {
+    name: "Figma",
+    image: "images/skills/figma.png",
+    link: "https://www.figma.com/",
+  },
 ];
 
 // const techStackContainer = document.querySelector(".tech-stack-container");

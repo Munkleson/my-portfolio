@@ -1,6 +1,6 @@
 const projects = [
   {
-    image: "/images//memory-card-game-pic.jpg",
+    image: "/images/projects/memory-card-game-pic.jpg",
     title: "Pokemon Memory Game",
     description: "A memory game with various game modes where you have to avoid clicking the same card twice in the same round",
     techStack: ["React.js", "HTML", "CSS"],
@@ -8,15 +8,15 @@ const projects = [
     demoLink: "https://munkleson.github.io/TOP-memory-card/",
   },
   {
-    image: "/images//game-swap-pic.jpg",
+    image: "/images/projects/game-swap-pic.jpg",
     title: "Game Swap",
     description: "An app where you can rent out, borrow, or swap physical copies of games near you",
-    techStack: ["Ruby on Rails", "Stimulus.js", "JavaScript", "HTML", "SCSS", "Bootstrap", "PostgreSQL"],
+    techStack: ["Ruby on Rails", "Stimulus Js", "JavaScript", "HTML", "SCSS", "Bootstrap", "PostgreSQL"],
     githubLink: "https://github.com/Munkleson/game-swap",
     demoLink: "https://game-swap-e551a983a6f1.herokuapp.com/",
   },
   {
-    image: "/images//steam-game-manager-pic.jpg",
+    image: "/images/projects/steam-game-manager-pic.jpg",
     title: "Steam Game Manager",
     description: "An app where you can manage your steam games, track stats, and make goals to maximise usage of your unplayed games",
     techStack: ["Ruby on Rails", "Stimulus.js", "JavaScript", "HTML", "Bootstrap", "CSS", "PostgreSQL"],

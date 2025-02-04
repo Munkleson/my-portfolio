@@ -1,4 +1,46 @@
-.history-break {
-  width: 2px;
+/* .history-break {
+  width: 2px !important;
   background-color: black;
+} */
+
+:root {
+  --history-bg-color: rgb(160, 158, 158);
+}
+
+#history-section {
+  width: 90%;
+}
+
+.history-section {
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+/* .history-section:hover {
+  background-color: var(--history-bg-color);
+  color: white;
+  transition: 0.3s;
+} */
+
+.history-line {
+  border-right: 5px solid var(--history-bg-color);
+}
+
+.history-image {
+  --history-image-dimensions: 60px;
+  height: var(--history-image-dimensions);
+  width: var(--history-image-dimensions);
+  border-radius: 50%;
+}
+
+.education-work-history-section {
+  width: 95vw;
+}
+
+.history-container {
+  width: 75%;
+}
+
+.history-dates {
+  font-size: 0.8rem;
 }
