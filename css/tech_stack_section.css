@@ -4,6 +4,10 @@
   cursor: default;
 }
 
+.tech-stack-container {
+  --bs-gutter-x: 0 !important;
+}
+
 .tech-stack-image {
   height: 50px;
   transition: 0.2s ease-out;
