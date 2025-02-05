@@ -2,7 +2,7 @@ const bootcamps = [
   {
     name: "Le Wagon Tokyo",
     link: "https://www.lewagon.com/tokyo",
-    image: "/images/bootcamps/le wagon.jpg",
+    image: "images/bootcamps/le wagon.jpg",
     description: "Full stack web development course",
     dates: "Sept 2024 - Mar 2025",
     info: [
@@ -12,7 +12,7 @@ const bootcamps = [
   {
     name: "The Odin Project",
     link: "https://www.theodinproject.com/",
-    image: "/images/bootcamps/the odin project.png",
+    image: "images/bootcamps/the odin project.png",
     description: "Full stack JavaScript path",
     dates: "Jun 2024 - Ongoing",
     info: [
@@ -22,7 +22,7 @@ const bootcamps = [
   {
     name: "Code Chrysalis",
     link: "https://www.codechrysalis.io/",
-    image: "/images/bootcamps/code chrysalis.png",
+    image: "images/bootcamps/code chrysalis.png",
     description: "Foundations course - Introduction to web development",
     dates: "Nov 2022 - Feb 2023",
     info: [

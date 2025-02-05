@@ -77,7 +77,8 @@ function checkScrolledPosition() {
   // Sets how many px above a section do I want to consider having "moved" to that section
   let scrollPositionToCheck = 140;
 
-  if (history.top <= scrollPositionToCheck) {
+  // History top scroll position amount like this is only due to there being nothing below this. Should there be more elements/spacing placed below this will have to be adjusted
+  if (history.top <= scrollPositionToCheck + 400) {
     setActiveSection(navigationHistory);
   } else if (projects.top <= scrollPositionToCheck) {
     setActiveSection(navigationProjects);
