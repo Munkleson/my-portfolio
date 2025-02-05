@@ -75,10 +75,13 @@ function checkScrolledPosition() {
   const history = historySection.getBoundingClientRect();
 
   // Sets how many px above a section do I want to consider having "moved" to that section
-  let scrollPositionToCheck = 140;
+  const aspectRatio = window.innerWidth / window.innerHeight; // Checks if mobile or not
+  const extraBuffer = aspectRatio <= 1 ? -50 : 0;
+  let scrollPositionToCheck = 140 + extraBuffer;
+  const historyExtraBuffer = aspectRatio <= 1 ? 0 : 400;
 
   // History top scroll position amount like this is only due to there being nothing below this. Should there be more elements/spacing placed below this will have to be adjusted
-  if (history.top <= scrollPositionToCheck + 400) {
+  if (history.top <= scrollPositionToCheck + historyExtraBuffer) {
     setActiveSection(navigationHistory);
   } else if (projects.top <= scrollPositionToCheck) {
     setActiveSection(navigationProjects);
@@ -91,10 +94,42 @@ function checkScrolledPosition() {
 
 window.addEventListener("scroll", checkScrolledPosition);
 
-document.querySelector(".navigation-profile").addEventListener("click", (event) => {
+navigationProfile.addEventListener("click", (event) => {
   event.preventDefault();
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
   });
+})
+
+const sectionEventElements = [
+  {
+    nav: navigationSkills,
+    div: skillsSection
+  },
+  {
+    nav: navigationProjects,
+    div: projectsSection
+  },
+  {
+    nav: navigationHistory,
+    div: historySection
+  }
+]
+
+sectionEventElements.forEach((item) => {
+  item.nav.addEventListener("click", (event) => {
+    if (window.innerWidth / window.innerHeight <= 1) {
+      event.preventDefault();
+      // This offset makes it so the window scrolls to the correct position
+      const offset = 70;
+      const targetPosition = item.div.getBoundingClientRect().top + window.scrollY - offset;
+      console.log(targetPosition);
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  })
 })
