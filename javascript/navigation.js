@@ -23,7 +23,6 @@ const sections = [
 
 const navigationSection = document.querySelector(".navigation-section");
 const navigationTemplate = document.querySelector(".navigation-template");
-const navigationDividerTemplate = document.querySelector(".navigation-divider-template");
 const activeBarTemplate = document.querySelector(".active-bar-template");
 
 sections.forEach((item, index) => {
@@ -69,14 +68,13 @@ const navigationSkills = document.querySelector(".navigation-skills");
 const navigationProjects = document.querySelector(".navigation-projects");
 const navigationHistory = document.querySelector(".navigation-history");
 
-let currentScrollY = window.scrollY;
-
 function checkScrolledPosition() {
   const profile = profileSection.getBoundingClientRect();
   const skills = skillsSection.getBoundingClientRect();
   const projects = projectsSection.getBoundingClientRect();
   const history = historySection.getBoundingClientRect();
 
+  // Sets how many px above a section do I want to consider having "moved" to that section
   let scrollPositionToCheck = 140;
 
   if (history.top <= scrollPositionToCheck) {

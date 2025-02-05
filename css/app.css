@@ -2,6 +2,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background-color: #F0F0F0 !important; */
+  background-color: #F3F4F6 !important;
 }
 
 p {
