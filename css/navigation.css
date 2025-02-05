@@ -1,6 +1,20 @@
 .navigation-section {
   top: 50px;
   left: 30px;
+  transform: translateZ(0);
+  will-change: transform;
+  z-index: 2;
+}
+
+@media only screen and (max-aspect-ratio: 1) {
+  .navigation-section {
+    top: 0px;
+    left: 0px;
+    padding-top: 10px;
+    width: 100%;
+    background-color: var(--background-color);
+    box-shadow: 2px 0 4px black;
+  }
 }
 
 .navigation-text {
@@ -12,10 +26,6 @@
 .active-section {
   color: black;
   /* transition: 0.3s; */
-}
-
-.navigation-divider {
-
 }
 
 .active-bar {

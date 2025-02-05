@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta property="og:image" content="">
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <link rel="stylesheet" href="css/links.css">
     <link rel="stylesheet" href="css/navigation.css">
@@ -17,27 +18,26 @@
     <title>Alex's portfolio</title>
   </head>
   <body>
+    <!-- Navigation scroll section -->
+    <div class="navigation-section position-fixed d-flex flex-xl-column justify-content-evenly justify-content-xl-start">
+    </div>
+
     <div class="body-container d-flex flex-column align-items-center w-100 position-relative">
-
-      <!-- Navigation scroll section -->
-      <div class="navigation-section position-fixed d-flex flex-column">
-      </div>
-
       <!-- Profile section -->
-      <div id="profile-section" class="profile-container d-flex justify-content-center align-items-center position-relative">
+      <div id="profile-section" class="profile-container d-flex flex-column flex-xl-row justify-content-center align-items-center position-relative">
         <img src="images/profile/my photo.jpg" alt="" class="profile-picture rounded-circle">
 
         <!-- Profile container -->
-        <div class="profile-container-right d-flex flex-column align-items-center justify-content-center ps-5 position-relative">
-          <h2 class="profile-text-content text-start">Alex's Portfolio</h2>
-          <h6 class="profile-text-content text-start">Full-stack web developer</h6>
-          <p class="profile-location-text profile-text-content text-start d-flex align-items-center">
+        <div class="profile-container-right d-flex flex-column align-items-center justify-content-center ps-0 ps-xl-5 position-relative">
+          <h2 class="profile-text-content text-center text-xl-start">Alex's Portfolio</h2>
+          <h6 class="profile-text-content text-center text-xl-start">Full-stack web developer</h6>
+          <p class="profile-location-text profile-text-content justify-content-center justify-content-xl-start d-flex align-items-center">
             <img src="images/profile/location-pin.png" alt="" class="location-pin me-1">
-            Tokyo, Japan
+            <span>Tokyo, Japan</span>
             <img src="images/profile/Japanese flag.png" alt="" class="japanese-flag ms-2">
           </p>
-          <p class="profile-text-content my-2">Hi, my name is Alex, and welcome to my portfolio. I have been studying web development for about 1.5 years through online resources and bootcamps, and I am looking to make the transition into my final career path!</p>
-          <p class="profile-text-content">
+          <p class="profile-text-content my-2 text-center text-xl-start">Hi, my name is Alex, and welcome to my portfolio. I have been studying web development for about 1.5 years through online resources and bootcamps, and I am looking to make the transition into my final career path!</p>
+          <p class="profile-text-content text-center text-xl-start">
             <strong>Fun fact:</strong>
             <span>I host table tennis and gaming meetups through</span>
             <a href="https://site.matchtokyo.com/home" class="text-decoration-none">Match Tokyo</a>.
@@ -105,12 +105,12 @@
       </div>
 
       <!-- History section -->
-      <div id="history-section" class="d-flex justify-content-center">
+      <div id="history-section" class="d-flex flex-column flex-xl-row justify-content-center align-items-center">
 
         <!-- Bootcamp history -->
         <div class="bootcamp-section history-item d-flex flex-column align-items-center">
           <h2 class="bootcamp-section-title text-center mb-3">Web development education</h2>
-          <div class="d-flex flex-column align-items-center">
+          <div class="d-flex flex-column align-self-start align-self-xl-center">
             <div class="bootcamp-section-container"></div>
           </div>
         </div>
@@ -118,7 +118,7 @@
         <!-- Work history -->
         <div class="work-history-section history-item d-flex flex-column align-items-center">
           <h2 class="text-center mb-3">Work history</h2>
-          <div class="d-flex flex-column align-items-center">
+          <div class="d-flex flex-column align-self-start align-self-xl-center">
             <div class="work-history-container"></div>
           </div>
         </div>
@@ -126,7 +126,7 @@
         <!-- Education history -->
         <div class="education-history-section history-item d-flex flex-column align-items-center">
           <h2 class="text-center mb-3">Education</h2>
-          <div class="d-flex flex-column align-items-center">
+          <div class="d-flex flex-column align-self-start align-self-xl-center">
             <div class="education-history-container"></div>
           </div>
         </div>
@@ -146,7 +146,7 @@
 
     <!-- Template for the line next to the active section -->
     <template class="active-bar-template">
-      <div class="active-bar"></div>
+      <div class="active-bar d-none d-xl-block"></div>
     </template>
 
     <!-- Template for projects - first iteration -->

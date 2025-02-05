@@ -19,7 +19,7 @@ const projects = [
     image: "images/projects/steam-game-manager-pic.jpg",
     title: "Steam Game Manager",
     description: "An app where you can manage your steam games, track stats, and make goals to maximise usage of your unplayed games",
-    techStack: ["Ruby on Rails", "Stimulus.js", "JavaScript", "HTML", "Bootstrap", "CSS", "PostgreSQL"],
+    techStack: ["Ruby on Rails", "Stimulus.js", "JavaScript", "HTML", "CSS", "Bootstrap", "PostgreSQL"],
     githubLink: "https://github.com/Munkleson/steam-game-manager",
     demoLink: "https://steam-game-manager-0d4317711fa3.herokuapp.com/",
   },
@@ -31,9 +31,7 @@ function loadProjectTemplates() {
   projects.forEach((project) => {
     let clone = template.content.cloneNode(true);
 
-    clone.querySelectorAll(".project-github-link").forEach((githubLink) => {
-      githubLink.href = project.githubLink;
-    });
+    clone.querySelector(".project-github-link").href = project.githubLink;
     clone.querySelector(".project-picture").src = project.image;
     clone.querySelector(".project-title").innerText = project.title;
     clone.querySelector(".project-description").innerText = project.description;
@@ -46,7 +44,9 @@ function loadProjectTemplates() {
       techStack.append(techStackClone);
     })
 
-    clone.querySelector(".project-demo-link").href = project.demoLink;
+    clone.querySelectorAll(".project-demo-link").forEach((demoLink) => {
+      demoLink.href = project.demoLink;
+    })
 
     projectsSection.append(clone);
   });

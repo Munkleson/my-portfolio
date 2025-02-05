@@ -20,6 +20,12 @@
   width: 30%;
 }
 
+@media only screen and (max-aspect-ratio: 1) {
+  .history-item {
+    width: 100%;
+  }
+}
+
 /* .history-section:hover {
   background-color: var(--history-bg-color);
   color: white;

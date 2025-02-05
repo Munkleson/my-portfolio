@@ -3,6 +3,13 @@
   width: 40%;
 }
 
+@media only screen and (max-aspect-ratio: 1) {
+  #profile-section {
+    /* margin-top: 15%; */
+    width: 100%;
+  }
+}
+
 .profile-picture {
   width: 200px;
   height: 200px;

@@ -90,3 +90,11 @@ function checkScrolledPosition() {
 }
 
 window.addEventListener("scroll", checkScrolledPosition);
+
+document.querySelector(".navigation-profile").addEventListener("click", (event) => {
+  event.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+})
