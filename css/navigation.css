@@ -1,0 +1,28 @@
+.navigation-section {
+  top: 50px;
+  left: 30px;
+}
+
+.navigation-text {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  /* transition: 0.3s; */
+}
+
+.active-section {
+  color: black;
+  /* transition: 0.3s; */
+}
+
+.navigation-divider {
+
+}
+
+.active-bar {
+  position: absolute;
+  left: -10px;
+  top: 0px;
+  height: 100%;
+  background-color: black;
+  width: 4px;
+}

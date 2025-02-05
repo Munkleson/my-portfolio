@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <link rel="stylesheet" href="css/links.css">
+    <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/profile_section.css">
     <link rel="stylesheet" href="css/projects_section.css">
     <link rel="stylesheet" href="css/history_section.css">
@@ -16,7 +17,11 @@
     <title>Alex's portfolio</title>
   </head>
   <body>
-    <div class="body-container d-flex flex-column align-items-center w-100">
+    <div class="body-container d-flex flex-column align-items-center w-100 position-relative">
+
+      <!-- Navigation scroll section -->
+      <div class="navigation-section position-fixed d-flex flex-column">
+      </div>
 
       <!-- Profile section -->
       <div id="profile-section" class="profile-container d-flex justify-content-center align-items-center position-relative">
@@ -31,7 +36,7 @@
             Tokyo, Japan
             <img src="images/profile/Japanese flag.png" alt="" class="japanese-flag ms-2">
           </p>
-          <p class="profile-text-content my-2">Hi, my name is Alex, and welcome to my portfolio. I have been educationing web development for about 1.5 years through online resources and bootcamps, and I am looking to make the transition into my final career path!</p>
+          <p class="profile-text-content my-2">Hi, my name is Alex, and welcome to my portfolio. I have been studying web development for about 1.5 years through online resources and bootcamps, and I am looking to make the transition into my final career path!</p>
           <p class="profile-text-content">
             <strong>Fun fact:</strong>
             <span>I host table tennis and gaming meetups through</span>
@@ -65,38 +70,6 @@
         <div class="section-break-line"></div>
       </div>
 
-      <!-- Projects section -->
-      <div id="projects-section" class="d-flex flex-column align-items-center w-100">
-        <h2 class="projects-section-title mb-2">My projects</h2>
-        <div class="projects-container d-flex justify-content-center row">
-
-          <template class="project-template">
-            <div class="project-card card col-10 col-md-4 col-xl-3 mx-3 my-3 pb-2">
-              <a href="" class="project-demo-link text-decoration-none p-3" target="_blank">
-                <img class="project-picture border w-100" src="" alt="">
-              </a>
-
-              <div class="project-info-container d-flex flex-column p-2">
-                <strong class="project-title text-center mb-2"></strong>
-                <p class="project-description mb-2 text-cen"></p>
-                <strong class="tech-stack-text text-center mb-1">Technologies used</strong>
-                <div class="project-tech-stack-container mb-2 text-center d-flex flex-wrap justify-content-center"></div>
-
-                <div class="project-links-container d-flex justify-content-evenly align-items-end">
-                  <a href="" class="project-github-link text-decoration-none" target="_blank">GitHub repo</a>
-                  <a href="" class="project-demo-link text-decoration-none" target="_blank">Live demo</a>
-                </div>
-              </div>
-            </div>
-          </template>
-
-        </div>
-      </div>
-
-      <div class="section-break">
-        <div class="section-break-line"></div>
-      </div>
-
       <!-- Tech stack section -->
       <div id="tech-stack-section" class="d-flex flex-column w-75">
         <h2 class="tech-stack-section-title text-center">Skills</h2>
@@ -113,6 +86,17 @@
             <h4 class="text-center mb-3">Tools</h4>
             <div class="services-section d-flex justify-content-center flex-wrap"></div>
           </div>
+        </div>
+      </div>
+
+      <div class="section-break">
+        <div class="section-break-line"></div>
+      </div>
+
+      <!-- Projects section -->
+      <div id="projects-section" class="d-flex flex-column align-items-center w-100">
+        <h2 class="projects-section-title mb-2">My projects</h2>
+        <div class="projects-container d-flex justify-content-center row">
         </div>
       </div>
 
@@ -158,14 +142,51 @@
         </div>
       </div>
 
-      <div class="section-break">
+      <!-- <div class="section-break">
         <div class="section-break-line"></div>
-      </div>
-
-
-
+      </div> -->
 
     </div>
+    <!-- End of body -->
+
+    <!-- Template for navigation -->
+    <template class="navigation-template">
+      <a href="" class="navigation-text text-decoration-none position-relative mb-3"></a>
+    </template>
+
+    <!-- Template for showing the line between each navigation element -->
+    <template class="navigation-divider-template">
+      <div class="navigation-divider"></div>
+    </template>
+
+    <!-- Template for the line next to the active section -->
+    <template class="active-bar-template">
+      <div class="active-bar"></div>
+    </template>
+
+    <!-- Template for projects - first iteration -->
+    <template class="project-template">
+      <div class="project-card card col-10 col-md-4 col-xl-3 mx-3 my-3 pb-2">
+        <a href="" class="project-demo-link text-decoration-none p-3" target="_blank">
+          <img class="project-picture border w-100" src="" alt="">
+        </a>
+
+        <div class="project-info-container d-flex flex-column p-2 pt-0 justify-content-between">
+          <div class="d-flex flex-column">
+            <strong class="project-title text-center mb-2 fs-4"></strong>
+            <p class="project-description mb-2 text-cen"></p>
+          </div>
+          <!-- <strong class="tech-stack-text text-center mb-1">Technologies used</strong> -->
+          <div class="d-flex flex-column">
+            <div class="project-tech-stack-container mb-2 text-center d-flex flex-wrap justify-content-center"></div>
+            <div class="project-links-container d-flex justify-content-evenly align-items-end">
+              <a href="" class="project-github-link text-decoration-none" target="_blank">GitHub repo</a>
+              <a href="" class="project-demo-link text-decoration-none" target="_blank">Live demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
 
     <!-- Template for web dev education history -->
     <template class="history-template">
@@ -196,6 +217,7 @@
       <div class="project-tech-stack-text px-2 py-1 mx-1 my-1 border border-2 rounded-pill"></div>
     </template>
     <!-- <script type="module" src="/src/main.js"></script> -->
+    <script src="javascript/navigation.js"></script>
     <script src="javascript/project_templates.js"></script>
     <script src="javascript/tech_stack_templates.js"></script>
     <script src="javascript/bootcamp_templates.js"></script>

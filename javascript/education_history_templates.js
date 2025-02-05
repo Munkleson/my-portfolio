@@ -13,7 +13,7 @@ const education = [
     name: "Macquarie University",
     link: "https://www.mq.edu.au/",
     image: "/images/education/macquarie university.jpg",
-    description: "Bachelor of Arts - Psychology part-time",
+    description: "Bachelor of Arts - Psychology",
     dates: "Feb 2012 - Nov 2018",
     info: [
 

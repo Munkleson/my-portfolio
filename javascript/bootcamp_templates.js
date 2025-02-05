@@ -3,7 +3,7 @@ const bootcamps = [
     name: "Le Wagon Tokyo",
     link: "https://www.lewagon.com/tokyo",
     image: "/images/bootcamps/le wagon.jpg",
-    description: "Full stack web development course focusing on Ruby on Rails",
+    description: "Full stack web development course",
     dates: "Sept 2024 - Mar 2025",
     info: [
       // "Studied"
