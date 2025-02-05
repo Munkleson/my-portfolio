@@ -1,6 +1,6 @@
-My portfolio
+<strong>Alex's portfolio</strong>
 
-This is a portfolio to showcase myself, skills, projects, and work and education history.
+This is a portfolio project to showcase my profile, tech stack, projects, and work and education history.
 
 This was made through vanilla JavaScript, HTML, and a mix of CSS and Bootstrap.
 
