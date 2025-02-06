@@ -1,5 +1,12 @@
 :root {
   --background-color: #F3F4F6 !important;
+  /* --black: black; */
+
+  /* --bs-body-color: #0B1215 !important; */
+  --bs-body-color: #182331 !important;
+
+  --black: #0B1215;
+  --black-rgba: 11, 18, 21;
 }
 
 body {
@@ -43,7 +50,7 @@ p {
 .section-break-line {
   width: 50%;
   height: 2.5px;
-  background: linear-gradient(to right, transparent, black, transparent);
+  background: linear-gradient(to right, transparent, rgb(var(--black-rgba)), transparent);
 }
 
 .body-container {

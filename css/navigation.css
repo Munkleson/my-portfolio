@@ -13,7 +13,7 @@
     padding-top: 10px;
     width: 100%;
     background-color: var(--background-color);
-    box-shadow: 2px 0 4px black;
+    box-shadow: 2px 0 4px var(--black);
   }
 }
 
@@ -33,6 +33,6 @@
   left: -10px;
   top: 0px;
   height: 100%;
-  background-color: black;
+  background-color: var(--black);
   width: 4px;
 }

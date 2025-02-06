@@ -28,8 +28,8 @@
 }
 
 .resume-button {
-  background-color: black !important;
-  color: white !important;
+  background-color: #333A3F !important;
+  color: #F3F4F6 !important;
   transition: 0.15s !important;
 
   font-weight: 400;
