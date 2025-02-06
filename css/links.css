@@ -1,7 +1,12 @@
 .links-container {
-  /* width: 2.5vw; */
-  height: 2.1em;
-  /* bottom: -50px; */
+  height: 2.1rem;
+  width: 65%;
+}
+
+@media only screen and (max-aspect-ratio: 1) {
+  .links-container {
+    height: 2.5rem;
+  }
 }
 
 .icon-images:hover {

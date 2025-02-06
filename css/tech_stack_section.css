@@ -33,3 +33,9 @@
   margin-bottom: 1rem;
   text-align: center;
 }
+
+@media only screen and (max-aspect-ratio: 1) {
+  #tech-stack-section {
+    width: 90% !important;
+  }
+}
