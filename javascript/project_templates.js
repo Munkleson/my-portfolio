@@ -1,8 +1,16 @@
 const projects = [
   {
+    image: "images/projects/eventerate-pic.jpg",
+    title: "Eventerate",
+    description: "A web app that generates personalized event plans and activities while offering collaboration tools for teachers, event coordinators, and HR professionals.",
+    techStack: ["Ruby on Rails", "Stimulus Js", "JavaScript", "HTML", "SCSS", "Bootstrap", "Turbo", "PostgreSQL"],
+    githubLink: "https://github.com/Cindy0202-mae/eventerate",
+    demoLink: "https://www.eventerate.com",
+  },
+  {
     image: "images/projects/memory-card-game-pic.jpg",
     title: "Pokemon Memory Game",
-    description: "A memory game with various game modes where you have to avoid clicking the same card twice in the same round",
+    description: "A memory game with various game modes where you have to click on all the Pokemon without picking the same one twice",
     techStack: ["React.js", "HTML", "CSS"],
     githubLink: "https://github.com/Munkleson/TOP-memory-card",
     demoLink: "https://munkleson.github.io/TOP-memory-card/",
