@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/profile_section.css">
     <link rel="stylesheet" href="css/projects_section.css">
+    <link rel="stylesheet" href="css/featured_project.css">
     <link rel="stylesheet" href="css/history_section.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/tech_stack_section.css">
@@ -100,10 +101,10 @@
       </div>
 
       <!-- Projects section -->
-      <div id="projects-section" class="d-flex flex-column align-items-center w-100">
+      <div id="projects-section" class="d-flex flex-column align-items-center gap-2 w-100">
         <h2 class="projects-section-title mb-2">My projects</h2>
-        <div class="projects-container d-flex justify-content-center row">
-        </div>
+        <div class="featured-project-container"></div>
+        <div class="projects-container d-flex justify-content-center row"></div>
       </div>
 
       <div class="section-break">
@@ -153,6 +154,20 @@
     <!-- Template for the line next to the active section -->
     <template class="active-bar-template">
       <div class="active-bar d-none d-xl-block"></div>
+    </template>
+
+    <!-- Template for featured project -->
+    <template class="featured-project-template">
+      <div class="featured-project-card card">
+        <div class="featured-project-image-container">
+          <a href="" class="featured-project-link">
+            <img src="" alt="" class="featured-project-image">
+          </a>
+          <a href="" class="featured-project-link">
+            <img src="" alt="" class="featured-project-image">
+          </a>
+        </div>
+      </div>
     </template>
 
     <!-- Template for projects - first iteration -->
