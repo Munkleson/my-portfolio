@@ -33,4 +33,12 @@
   #projects-section {
     padding: 0 4%;
   }
+
+  .project-card {
+    padding: 1rem !important;
+  }
+
+  .project-card .project-demo-link {
+    padding: 0 !important;
+  }
 }

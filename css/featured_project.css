@@ -15,3 +15,17 @@
 .featured-project-image {
   border: 0.1px solid rgba(0, 0, 0, 0.07) !important;
 }
+
+.featured-project-card-info-container > * {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .featured-project-container {
+    padding: 0;
+  }
+
+  .featured-project-image-container {
+    width: 100%;
+  }
+}
