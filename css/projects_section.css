@@ -1,5 +1,5 @@
 #projects-section {
-  padding: 0 10%;
+  padding: 0 15%;
 }
 
 .project-info-container {
@@ -14,6 +14,7 @@
   /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
   border-radius: 5px !important;
   border: 0.1px solid rgba(0, 0, 0, 0.07) !important;
+  width: 49% !important;
 }
 
 .project-picture {
@@ -36,6 +37,7 @@
 
   .project-card {
     padding: 1rem !important;
+    width: 100% !important;
   }
 
   .project-card .project-demo-link {
