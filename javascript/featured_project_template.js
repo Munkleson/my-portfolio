@@ -14,12 +14,18 @@ function loadFeaturedProject() {
   const template = document.querySelector(".featured-project-template");
 
   let clone = template.content.cloneNode(true);
+  loadFeaturedLinks(clone);
   loadFeaturedImages(clone);
 
   featuredProjectContainer.append(clone);
 }
 
 loadFeaturedProject();
+
+function loadFeaturedLinks(clone) {
+  const projectLinks = clone.querySelectorAll(".featured-project-link");
+  projectLinks.forEach(projectLink => projectLink.href = featuredProject.demoLink);
+}
 
 function loadFeaturedImages(clone) {
   const imageContainer = clone.querySelector(".featured-project-image-container");
