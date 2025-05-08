@@ -4,8 +4,14 @@
 
 .featured-project-card {
   background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 0.1px solid rgba(0, 0, 0, 0.07) !important;
 }
 
 .featured-project-image-container {
+  width: 40%;
+}
 
+.featured-project-image {
+  border: 0.1px solid rgba(0, 0, 0, 0.07) !important;
 }

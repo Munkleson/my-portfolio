@@ -16,6 +16,7 @@ function loadFeaturedProject() {
   let clone = template.content.cloneNode(true);
   loadFeaturedLinks(clone);
   loadFeaturedImages(clone);
+  loadFeaturedInfo(clone);
 
   featuredProjectContainer.append(clone);
 }
@@ -33,4 +34,9 @@ function loadFeaturedImages(clone) {
   images.forEach((image, index) => {
     image.src = featuredProject.images[index];
   });
+}
+
+function loadFeaturedInfo(clone) {
+  const title = clone.querySelector(".featured-project-title");
+  title.innerText = featuredProject.title;
 }
