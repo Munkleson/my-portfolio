@@ -1,5 +1,10 @@
 #projects-section {
-  padding: 0 15%;
+  /* padding: 0 15%; */
+  max-width: 1000px;
+}
+
+.projects-container {
+  row-gap: 1rem;
 }
 
 .project-info-container {
