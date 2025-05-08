@@ -12,8 +12,9 @@
 }
 
 .project-card {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  border-radius: 10px !important;
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+  border-radius: 5px !important;
+  border: 0.1px solid rgba(0, 0, 0, 0.07) !important;
 }
 
 .project-picture {

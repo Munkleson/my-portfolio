@@ -1,3 +1,7 @@
+const featuredProject = {
+  
+}
+
 const projects = [
   {
     image: "images/projects/eventerate-pic.jpg",
