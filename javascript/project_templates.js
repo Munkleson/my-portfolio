@@ -1,17 +1,9 @@
-const featuredProject = {
-  image: "images/projects/eventerate-pic.jpg",
-  title: "Eventerate",
-  description: "A web app that generates personalized event plans and activities while offering collaboration tools for teachers, event coordinators, and HR professionals.",
-  techStack: ["Ruby on Rails", "Stimulus Js", "JavaScript", "HTML", "SCSS", "Bootstrap", "Turbo", "PostgreSQL"],
-  demoLink: "https://events.matchtokyo.com/",
-}
-
 const projects = [
   {
     image: "images/projects/eventerate-pic.jpg",
     title: "Eventerate",
     description: "A web app that generates personalized event plans and activities while offering collaboration tools for teachers, event coordinators, and HR professionals.",
-    techStack: ["Ruby on Rails", "Stimulus Js", "JavaScript", "HTML", "SCSS", "Bootstrap", "Turbo", "PostgreSQL"],
+    techStack: ["Ruby on Rails", "Stimulus", "JavaScript", "HTML", "SCSS", "Bootstrap", "Turbo", "PostgreSQL"],
     githubLink: "https://github.com/Cindy0202-mae/eventerate",
     demoLink: "https://www.eventerate.com",
   },
@@ -27,7 +19,7 @@ const projects = [
     image: "images/projects/game-swap-pic.jpg",
     title: "Game Swap",
     description: "An app where you can rent out, borrow, or swap physical copies of games near you",
-    techStack: ["Ruby on Rails", "Stimulus Js", "JavaScript", "HTML", "SCSS", "Bootstrap", "PostgreSQL"],
+    techStack: ["Ruby on Rails", "Stimulus", "JavaScript", "HTML", "SCSS", "Bootstrap", "PostgreSQL"],
     githubLink: "https://github.com/Munkleson/game-swap",
     demoLink: "https://game-swap-e551a983a6f1.herokuapp.com/",
   },
@@ -35,9 +27,9 @@ const projects = [
     image: "images/projects/steam-game-manager-pic.jpg",
     title: "Steam Game Manager",
     description: "An app where you can manage your steam games, track stats, and make goals to maximise usage of your unplayed games",
-    techStack: ["Ruby on Rails", "Stimulus.js", "JavaScript", "HTML", "CSS", "Bootstrap", "PostgreSQL"],
+    techStack: ["Ruby on Rails", "Stimulus", "JavaScript", "HTML", "CSS", "Bootstrap", "PostgreSQL"],
     githubLink: "https://github.com/Munkleson/steam-game-manager",
-    // demoLink: "https://steam-game-manager-0d4317711fa3.herokuapp.com/",
+    // demoLink: "https://steam-game-manager-0d4317711fa3.herokuapp.com/", // Disabled due to not being live anymore
   },
 ];
 
