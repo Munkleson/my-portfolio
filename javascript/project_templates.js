@@ -44,49 +44,63 @@ const projects = [
 function loadProjectTemplates() {
   const projectsSection = document.querySelector(".projects-container");
   const template = document.querySelector(".project-template");
+
   projects.forEach((project) => {
     let clone = template.content.cloneNode(true);
 
-    clone.querySelector(".project-picture").src = project.image;
-    clone.querySelector(".project-title").innerText = project.title;
-    clone.querySelector(".project-description").innerText = project.description;
-
-    const techStack = clone.querySelector(".project-tech-stack-container");
-    const techStackTemplate = document.querySelector(".project-tech-stack-template");
-    project.techStack.forEach((tech) => {
-      let techStackClone = techStackTemplate.content.cloneNode(true)
-      techStackClone.querySelector(".project-tech-stack-text").innerText = tech;
-      techStack.append(techStackClone);
-    })
-
-    // Only renders the GitHub link if it is a public repo
-    const githubLink = clone.querySelector(".project-github-link");
-    if (project.githubLink) {
-      githubLink.href = project.githubLink;
-    } else {
-      githubLink.remove();
-    }
-
-    // Only renders the demo link if the site for it is live
-    const demoLinks = clone.querySelectorAll(".project-demo-link");
-    if (project.demoLink) {
-      demoLinks.forEach((demoLink) => {
-        demoLink.href = project.demoLink;
-      })
-    } else {
-      demoLinks.forEach((demoLink) => {
-        // Conditional so it doesn't remove the image if there is no demo, as the image is a demo link too
-        if (demoLink.querySelector("img")) {
-          // Stops it from being clicked if it is an image and has no demolink
-          demoLink.classList.add("project-image-no-pointer");
-        } else {
-          demoLink.remove();
-        }
-      })
-    }
+    loadBasicInfo(clone, project);
+    loadTechStack(clone, project);
+    loadGithub(clone, project);
+    loadDemoLinks(clone, project);
 
     projectsSection.append(clone);
   });
 }
 
 loadProjectTemplates();
+
+function loadBasicInfo(clone, project) {
+  clone.querySelector(".project-picture").src = project.image;
+  clone.querySelector(".project-title").innerText = project.title;
+  clone.querySelector(".project-description").innerText = project.description;
+}
+
+function loadTechStack(clone, project) {
+  const techStack = clone.querySelector(".project-tech-stack-container");
+  const techStackTemplate = document.querySelector(".project-tech-stack-template");
+  project.techStack.forEach((tech) => {
+    let techStackClone = techStackTemplate.content.cloneNode(true)
+    techStackClone.querySelector(".project-tech-stack-text").innerText = tech;
+    techStack.append(techStackClone);
+  })
+}
+
+function loadGithub(clone, project) {
+  // Only renders the GitHub link if it is a public repo
+  const githubLink = clone.querySelector(".project-github-link");
+  if (project.githubLink) {
+    githubLink.href = project.githubLink;
+  } else {
+    githubLink.remove();
+  }
+}
+
+function loadDemoLinks(clone, project) {
+  // Only renders the demo link if the site for it is live
+  const demoLinks = clone.querySelectorAll(".project-demo-link");
+  if (project.demoLink) {
+    demoLinks.forEach((demoLink) => {
+      demoLink.href = project.demoLink;
+    })
+  } else {
+    demoLinks.forEach((demoLink) => {
+      // Conditional so it doesn't remove the image if there is no demo, as the image is a demo link too
+      if (demoLink.querySelector("img")) {
+        // Stops it from being clicked if it is an image and has no demolink
+        demoLink.classList.add("project-image-no-pointer");
+      } else {
+        demoLink.remove();
+      }
+    })
+  }
+}
