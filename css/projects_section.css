@@ -1,6 +1,5 @@
 #projects-section {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 0 10%;
 }
 
 .project-info-container {
@@ -28,4 +27,10 @@
 .project-image-no-pointer {
   pointer-events: none;
   user-select: none;
+}
+
+@media (max-width: 800px) {
+  #projects-section {
+    padding: 0 4%;
+  }
 }
