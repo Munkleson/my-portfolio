@@ -75,8 +75,11 @@ function loadProjectTemplates() {
       })
     } else {
       demoLinks.forEach((demoLink) => {
-        if (!demoLink.querySelector("img")) {
-          console.log(demoLink);
+        // Conditional so it doesn't remove the image if there is no demo, as the image is a demo link too
+        if (demoLink.querySelector("img")) {
+          // Stops it from being clicked if it is an image and has no demolink
+          demoLink.classList.add("project-image-no-pointer");
+        } else {
           demoLink.remove();
         }
       })

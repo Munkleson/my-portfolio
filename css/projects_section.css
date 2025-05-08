@@ -24,3 +24,8 @@
 .project-description {
   text-align: justify;
 }
+
+.project-image-no-pointer {
+  pointer-events: none;
+  user-select: none;
+}
