@@ -9,15 +9,28 @@
 }
 
 .featured-project-image-container {
-  width: 40%;
+  min-width: 40%;
+  max-width: 40%;
 }
 
 .featured-project-image {
   border: 0.1px solid rgba(0, 0, 0, 0.07) !important;
 }
 
+.featured-project-card-info-container {
+
+}
+
 .featured-project-card-info-container > * {
   width: 100%;
+}
+
+.featured-project-card-info-container > ul {
+  margin-top: -0.5rem;
+}
+
+.featured-project-description, .featured-project-info-list > li {
+  text-align: justify;
 }
 
 @media (max-width: 800px) {
@@ -26,6 +39,6 @@
   }
 
   .featured-project-image-container {
-    width: 100%;
+    min-width: 100%;
   }
 }

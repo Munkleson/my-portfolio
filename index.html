@@ -159,7 +159,7 @@
     <!-- Template for featured project -->
     <template class="featured-project-template">
 
-      <div class="featured-project-card card d-flex flex-column flex-md-row p-3 gap-2">
+      <div class="featured-project-card card d-flex flex-column flex-md-row p-3 gap-3">
         <div class="featured-project-image-container d-flex flex-column gap-2">
           <a href="" class="featured-project-link" target="_blank">
             <img src="" alt="" class="featured-project-image">
@@ -169,9 +169,22 @@
           </a>
         </div>
 
-        <div class="featured-project-card-info-container d-flex flex-column flex-grow-1">
+        <div class="featured-project-card-info-container d-flex flex-column flex-grow-1 gap-1 gap-md-2 px-2">
           <h3 class="featured-project-title text-center fw-bolder"></h3>
+          <p class="featured-project-description"></p>
+          <ul class="featured-project-info-list"></ul>
+          <p class="fw-bold">Features:</p>
+          <ul class="featured-project-features"></ul>
+
+          <div class="d-flex flex-column justify-content-end flex-grow-1">
+            <div class="featured-project-tech-stack-container mb-2 text-center d-flex flex-wrap justify-content-center"></div>
+            <div class="featured-project-links-container d-flex justify-content-evenly align-items-end">
+              <a href="" class="featured-project-github-link text-decoration-none" target="_blank">GitHub repo</a>
+              <a href="" class="featured-project-link text-decoration-none" target="_blank">Website</a>
+            </div>
+          </div>
         </div>
+
       </div>
     </template>
 
@@ -192,7 +205,7 @@
             <div class="project-tech-stack-container mb-2 text-center d-flex flex-wrap justify-content-center"></div>
             <div class="project-links-container d-flex justify-content-evenly align-items-end">
               <a href="" class="project-github-link text-decoration-none" target="_blank">GitHub repo</a>
-              <a href="" class="project-demo-link text-decoration-none" target="_blank">Live demo</a>
+              <a href="" class="project-demo-link text-decoration-none" target="_blank">Website</a>
             </div>
           </div>
         </div>

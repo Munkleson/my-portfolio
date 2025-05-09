@@ -1,12 +1,20 @@
+const matchTokyoLink = `<a href="https://site.matchtokyo.com/home" target="_blank">Match Tokyo</a>`;
+
 const featuredProject = {
   images: [
     "images/projects/match-tokyo-home.jpg",
     "images/projects/match-tokyo-tournaments.jpg"
   ],
   title: "Match Tokyo Events",
-  description: "A Meetup-style app where you can sign up your team for sports tournaments and join trips",
+  description: `A Meetup-style app for ${matchTokyoLink} where you can sign up your team for sports tournaments and join trips.`,
   techStack: ["Ruby on Rails", "Stimulus", "JavaScript", "HTML", "SCSS", "Bootstrap", "Turbo", "PostgreSQL"],
   demoLink: "https://events.matchtokyo.com/",
+  features: [
+    "Team management tools",
+    "Chat functionality",
+    "OAuth 2.0 login integration with LINE and Google",
+    "Extensive admin control"
+  ],
 }
 
 function loadFeaturedProject() {
@@ -17,6 +25,7 @@ function loadFeaturedProject() {
   loadFeaturedLinks(clone);
   loadFeaturedImages(clone);
   loadFeaturedInfo(clone);
+  loadFeaturedFeatures(clone);
 
   featuredProjectContainer.append(clone);
 }
@@ -39,4 +48,15 @@ function loadFeaturedImages(clone) {
 function loadFeaturedInfo(clone) {
   const title = clone.querySelector(".featured-project-title");
   title.innerText = featuredProject.title;
+  const description = clone.querySelector(".featured-project-description");
+  description.innerHTML = featuredProject.description;
+};
+
+function loadFeaturedFeatures(clone) {
+  const featuresContainer = clone.querySelector(".featured-project-features");
+  featuredProject.features.forEach((feature) => {
+    const featureElement = document.createElement("li");
+    featureElement.innerText = feature;
+    featuresContainer.append(featureElement);
+  });
 }
