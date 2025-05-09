@@ -40,7 +40,6 @@
 @media (max-width: 800px) {
   #projects-section .featured-project-container {
     padding: 0;
-    margin-top: 0 !important;
   }
 
   .featured-project-container li, .featured-project-container p, a {
