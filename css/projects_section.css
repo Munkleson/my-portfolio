@@ -48,4 +48,8 @@
   .project-card .project-demo-link {
     padding: 0 !important;
   }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
 }
