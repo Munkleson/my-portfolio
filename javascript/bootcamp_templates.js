@@ -3,7 +3,7 @@ const bootcamps = [
     name: "Le Wagon Tokyo",
     link: "https://www.lewagon.com/tokyo",
     image: "images/bootcamps/le wagon.jpg",
-    description: "Full stack web development course",
+    description: "Full-stack web development course",
     dates: "Sept 2024 - Mar 2025",
     info: [
       // "Studied"
@@ -13,7 +13,7 @@ const bootcamps = [
     name: "The Odin Project",
     link: "https://www.theodinproject.com/",
     image: "images/bootcamps/the odin project.png",
-    description: "Full stack JavaScript path",
+    description: "Full-stack JavaScript path",
     dates: "Jun 2024 - Ongoing",
     info: [
 
