@@ -35,6 +35,14 @@ loadFeaturedProject();
 function loadFeaturedLinks(clone) {
   const projectLinks = clone.querySelectorAll(".featured-project-link");
   projectLinks.forEach(projectLink => projectLink.href = featuredProject.demoLink);
+
+  // Only shows the github link if the repo is not private
+  const githubLink = clone.querySelector(".featured-project-github-link");
+  if (featuredProject.githubLink) {
+    githubLink.href = featuredProject.githubLink;
+  } else {
+    githubLink.remove();
+  }
 }
 
 function loadFeaturedImages(clone) {
