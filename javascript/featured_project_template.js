@@ -6,8 +6,8 @@ const featuredProject = {
     "images/projects/match-tokyo-tournaments.jpg"
   ],
   title: "Match Tokyo Events",
-  description: `A Meetup-style app for ${matchTokyoLink} where you can sign up your team for sports tournaments and join trips.`,
-  techStack: ["Ruby on Rails", "Stimulus", "JavaScript", "HTML", "SCSS", "Bootstrap", "Turbo", "PostgreSQL"],
+  description: `An events-based social platform for ${matchTokyoLink} where you can sign up your team for sports tournaments and join trips`,
+  techStack: ["Ruby on Rails", "Stimulus", "JavaScript", "HTML", "SCSS", "Bootstrap", "Turbo", "PostgreSQL", "OAuth 2.0", "Cloudinary", "Heroku"],
   demoLink: "https://events.matchtokyo.com/",
   features: [
     "Team management tools",
@@ -26,6 +26,7 @@ function loadFeaturedProject() {
   loadFeaturedImages(clone);
   loadFeaturedInfo(clone);
   loadFeaturedFeatures(clone);
+  loadFeaturedTechStack(clone);
 
   featuredProjectContainer.append(clone);
 }
@@ -67,4 +68,14 @@ function loadFeaturedFeatures(clone) {
     featureElement.innerText = feature;
     featuresContainer.append(featureElement);
   });
+}
+
+function loadFeaturedTechStack(clone) {
+  const techStackContainer = clone.querySelector(".featured-project-tech-stack-container");
+  const techStackTemplate = document.querySelector(".project-tech-stack-template");
+  featuredProject.techStack.forEach((tech) => {
+    let techStackClone = techStackTemplate.content.cloneNode(true)
+    techStackClone.querySelector(".project-tech-stack-text").innerText = tech;
+    techStackContainer.append(techStackClone);
+  })
 }

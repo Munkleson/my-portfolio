@@ -2,7 +2,7 @@ const projects = [
   {
     image: "images/projects/eventerate-pic.jpg",
     title: "Eventerate",
-    description: "A web app that generates personalized event plans and activities while offering collaboration tools for teachers, event coordinators, and HR professionals.",
+    description: "A web app that generates personalized event plans and activities while offering collaboration tools for teachers, event coordinators, and HR professionals",
     techStack: ["Ruby on Rails", "Stimulus", "JavaScript", "HTML", "SCSS", "Bootstrap", "Turbo", "PostgreSQL"],
     githubLink: "https://github.com/Cindy0202-mae/eventerate",
     demoLink: "https://www.eventerate.com",
