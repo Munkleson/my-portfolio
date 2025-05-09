@@ -41,6 +41,7 @@
   height: var(--history-image-dimensions);
   width: var(--history-image-dimensions);
   border-radius: 50%;
+  object-fit: contain;
 }
 
 .education-work-history-section {

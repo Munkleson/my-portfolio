@@ -1,5 +1,15 @@
 const workHistory = [
   {
+    name: "Freelance",
+    link: "https://github.com/Munkleson",
+    image: "images/work/freelance.png",
+    description: "Full-stack web developer",
+    dates: "Jan 2025 - Ongoing",
+    info: [
+
+    ],
+  },
+  {
     name: "GPlusMedia Inc.",
     link: "https://gplusmedia.com/en",
     image: "images/work/gplusmedia.jpg",
