@@ -7,8 +7,9 @@
   row-gap: 1rem;
 }
 
-.project-info-container {
+.project-card .project-info-container {
   flex: 1;
+  padding-bottom: 0 !important;
 }
 
 .project-links-container {
